@@ -42,7 +42,7 @@ export default function Navbar() {
       <div className="navbar__inner">
         <button className="navbar__logo" onClick={() => handleClick('inicio')}>
           <span className="navbar__logo-icon">A</span>
-          <span className="navbar__logo-text">Avant</span>
+          <span className="navbar__logo-text">Avant <span className="navbar__logo-sub">Estudio</span></span>
         </button>
 
         <div className={`navbar__links ${menuOpen ? 'navbar__links--open' : ''}`}>

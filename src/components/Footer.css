@@ -41,6 +41,12 @@
   letter-spacing: 1px;
 }
 
+.footer__logo-sub {
+  font-weight: 400;
+  font-style: italic;
+  color: var(--pink);
+}
+
 .footer__tagline {
   font-size: 0.9rem;
   margin-bottom: 8px;

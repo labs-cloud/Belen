@@ -35,12 +35,47 @@ export default function Nosotros() {
           <div className="nosotros__story fade-in-left">
             <div className="nosotros__image-placeholder">
               <div className="nosotros__image-inner">
-                <svg viewBox="0 0 200 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="200" height="260" rx="16" fill="#FDF2F8"/>
-                  <circle cx="100" cy="90" r="35" fill="#FCE7F3"/>
-                  <path d="M100 130 C60 130 50 180 50 210 L150 210 C150 180 140 130 100 130Z" fill="#FCE7F3"/>
-                  <circle cx="100" cy="90" r="20" stroke="#E91E7B" strokeWidth="2" fill="none" opacity="0.5"/>
-                  <path d="M85 200 L100 170 L115 200" stroke="#E91E7B" strokeWidth="2" fill="none" opacity="0.5"/>
+                <svg viewBox="0 0 300 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="300" height="420" rx="20" fill="#FDF2F8"/>
+                  {/* Decorative arch */}
+                  <path d="M50 400 C50 200 150 50 150 50 C150 50 250 200 250 400" stroke="#FCE7F3" strokeWidth="30" fill="none" strokeLinecap="round"/>
+                  {/* Ballerina in croisé pose */}
+                  {/* Head with bun */}
+                  <circle cx="150" cy="105" r="18" fill="#E91E7B" opacity="0.15"/>
+                  <circle cx="150" cy="105" r="18" stroke="#E91E7B" strokeWidth="1.5" fill="none" opacity="0.4"/>
+                  <circle cx="150" cy="92" r="7" fill="#E91E7B" opacity="0.1" stroke="#E91E7B" strokeWidth="1" />
+                  {/* Neck */}
+                  <path d="M150 123 L150 140" stroke="#E91E7B" strokeWidth="2" strokeLinecap="round" opacity="0.35"/>
+                  {/* Torso */}
+                  <path d="M150 140 C150 140 148 170 148 195" stroke="#E91E7B" strokeWidth="2.5" strokeLinecap="round" opacity="0.35"/>
+                  {/* Arms - graceful port de bras */}
+                  <path d="M150 150 C132 138 110 130 88 140" stroke="#E91E7B" strokeWidth="2" strokeLinecap="round" opacity="0.3"/>
+                  <path d="M88 140 C82 142 78 146 80 150" stroke="#E91E7B" strokeWidth="1.5" strokeLinecap="round" opacity="0.25"/>
+                  <path d="M150 150 C168 135 192 118 210 105" stroke="#E91E7B" strokeWidth="2" strokeLinecap="round" opacity="0.3"/>
+                  <path d="M210 105 C214 102 218 100 220 102" stroke="#E91E7B" strokeWidth="1.5" strokeLinecap="round" opacity="0.25"/>
+                  {/* Tutu */}
+                  <ellipse cx="148" cy="200" rx="42" ry="12" fill="#E91E7B" opacity="0.08"/>
+                  <ellipse cx="148" cy="200" rx="42" ry="12" stroke="#E91E7B" strokeWidth="1" fill="none" opacity="0.2"/>
+                  <ellipse cx="148" cy="197" rx="36" ry="8" fill="#E91E7B" opacity="0.05"/>
+                  <ellipse cx="148" cy="197" rx="36" ry="8" stroke="#E91E7B" strokeWidth="0.8" fill="none" opacity="0.15"/>
+                  {/* Standing leg */}
+                  <path d="M148 200 C148 230 146 270 145 310" stroke="#E91E7B" strokeWidth="2.5" strokeLinecap="round" opacity="0.35"/>
+                  {/* En pointe foot */}
+                  <path d="M145 310 C145 318 144 325 144 332" stroke="#E91E7B" strokeWidth="2" strokeLinecap="round" opacity="0.35"/>
+                  <path d="M142 330 L146 335 L144 330" stroke="#E91E7B" strokeWidth="1.5" strokeLinecap="round" opacity="0.3"/>
+                  {/* Développé leg extended */}
+                  <path d="M150 210 C165 205 190 195 220 178" stroke="#E91E7B" strokeWidth="2" strokeLinecap="round" opacity="0.3"/>
+                  <path d="M220 178 C224 176 228 175 230 176" stroke="#E91E7B" strokeWidth="1.5" strokeLinecap="round" opacity="0.25"/>
+                  {/* Ribbon details on slippers */}
+                  <path d="M142 320 C138 315 134 318 136 322" stroke="#E91E7B" strokeWidth="1" strokeLinecap="round" opacity="0.2"/>
+                  <path d="M147 320 C150 316 153 319 151 323" stroke="#E91E7B" strokeWidth="1" strokeLinecap="round" opacity="0.2"/>
+                  {/* Floor reflection */}
+                  <ellipse cx="150" cy="345" rx="50" ry="5" fill="#E91E7B" opacity="0.04"/>
+                  {/* Sparkle accents */}
+                  <circle cx="90" cy="160" r="2" fill="#E91E7B" opacity="0.15"/>
+                  <circle cx="210" cy="130" r="1.5" fill="#E91E7B" opacity="0.12"/>
+                  <circle cx="120" cy="240" r="1.5" fill="#E91E7B" opacity="0.1"/>
+                  <circle cx="195" cy="220" r="2" fill="#E91E7B" opacity="0.1"/>
                 </svg>
                 <span className="nosotros__image-label">Fundadora & Maestra</span>
               </div>

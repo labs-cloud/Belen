@@ -13,7 +13,7 @@ export default function Footer() {
           <div className="footer__brand">
             <div className="footer__logo">
               <span className="footer__logo-icon">A</span>
-              <span className="footer__logo-text">Avant</span>
+              <span className="footer__logo-text">Avant <span className="footer__logo-sub">Estudio</span></span>
             </div>
             <p className="footer__tagline">
               Estudio de Ballet y Danza Aérea

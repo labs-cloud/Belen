@@ -54,6 +54,12 @@
   letter-spacing: 1px;
 }
 
+.navbar__logo-sub {
+  font-weight: 400;
+  font-style: italic;
+  color: var(--pink);
+}
+
 .navbar__links {
   display: flex;
   align-items: center;
