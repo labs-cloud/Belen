@@ -1,0 +1,185 @@
+.clases {
+  background: var(--gray-100);
+}
+
+.clases__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 60px;
+}
+
+.clases__card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 32px 24px;
+  text-align: center;
+  transition: all var(--transition);
+  border: 1px solid var(--gray-200);
+}
+
+.clases__card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--pink);
+}
+
+.clases__card-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 20px;
+  background: var(--pink-subtle);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--pink);
+}
+
+.clases__card-icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.clases__card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.clases__card-desc {
+  font-size: 0.9rem;
+  color: var(--gray-500);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.clases__card-badge {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--pink);
+  background: var(--pink-subtle);
+  padding: 4px 14px;
+  border-radius: var(--radius-xl);
+}
+
+.clases__info {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  border: 1px solid var(--gray-200);
+}
+
+.clases__info h3 {
+  font-size: 1.4rem;
+  margin-bottom: 24px;
+  color: var(--black);
+}
+
+.clases__horarios-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.clases__horario-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: var(--gray-100);
+  border-radius: var(--radius-sm);
+}
+
+.clases__horario-dia {
+  font-weight: 600;
+  color: var(--black);
+}
+
+.clases__horario-hora {
+  color: var(--pink);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.clases__precios-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.clases__precio-card {
+  text-align: center;
+  padding: 24px 16px;
+  border-radius: var(--radius-md);
+  background: var(--gray-100);
+  border: 2px solid transparent;
+  transition: all var(--transition);
+  position: relative;
+}
+
+.clases__precio-card--popular {
+  border-color: var(--pink);
+  background: var(--pink-subtle);
+}
+
+.clases__precio-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--pink);
+  color: var(--white);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 3px 12px;
+  border-radius: var(--radius-xl);
+  white-space: nowrap;
+}
+
+.clases__precio-plan {
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  margin-bottom: 8px;
+}
+
+.clases__precio-amount {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 4px;
+}
+
+.clases__precio-detail {
+  font-size: 0.8rem;
+  color: var(--gray-400);
+}
+
+@media (max-width: 900px) {
+  .clases__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .clases__info {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+
+  .clases__precios-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .clases__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .clases__precios-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

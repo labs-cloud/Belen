@@ -1,0 +1,116 @@
+.galeria {
+  background: var(--gray-100);
+}
+
+.galeria__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 200px;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.galeria__item--tall {
+  grid-row: span 2;
+}
+
+.galeria__item--wide {
+  grid-column: span 2;
+}
+
+.galeria__placeholder {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+  background: linear-gradient(135deg, #FDF2F8, #FCE7F3);
+  border: 1px solid rgba(233, 30, 123, 0.1);
+}
+
+.galeria__placeholder svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.galeria__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(26, 26, 26, 0.8) 0%, transparent 60%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity var(--transition);
+}
+
+.galeria__placeholder:hover .galeria__overlay {
+  opacity: 1;
+}
+
+.galeria__label {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.galeria__desc {
+  color: var(--gray-300);
+  font-size: 0.85rem;
+}
+
+.galeria__instagram {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.galeria__instagram p {
+  color: var(--gray-500);
+  font-size: 1rem;
+}
+
+.galeria__instagram-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #E91E7B, #C4166A);
+  color: var(--white);
+  padding: 14px 28px;
+  border-radius: var(--radius-xl);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all var(--transition);
+}
+
+.galeria__instagram-btn:hover {
+  box-shadow: var(--shadow-pink);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .galeria__grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .galeria__grid {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 140px;
+  }
+
+  .galeria__item--wide {
+    grid-column: span 2;
+  }
+
+  .galeria__item--tall {
+    grid-row: span 2;
+  }
+}
